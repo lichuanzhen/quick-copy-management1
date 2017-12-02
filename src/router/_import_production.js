@@ -1,0 +1,1 @@
+exports.userModule = (file, chunk) => r => require.ensure([], () => r(require('@/views/' + file + '.vue')), chunk);
